@@ -1,0 +1,19 @@
+/*Code from JS module 2, lesson 2.1*/
+
+.loader {
+  border: 12px solid #fc542f;
+  border-top: 12px solid #f3f3f3;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
