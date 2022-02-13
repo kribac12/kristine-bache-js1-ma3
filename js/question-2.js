@@ -12,9 +12,9 @@ async function getGames() {
     resultsContainer.classList.remove("loader");
 
     for (let i = 0; i < facts.length; i++) {
-      resultsContainer.innerHTML += `<section class="results">${facts[i].name}</section>`;
-      resultsContainer.innerHTML += `<section class="results">${facts[i].rating}</section>`;
-      resultsContainer.innerHTML += `<section class="results">${facts[i].tags.length}</section>`;
+      resultsContainer.innerHTML += `<section class="results"><h3>Game: </h3> <p>${facts[i].name}</p></section>`;
+      resultsContainer.innerHTML += `<section class="results"><h4>Rating: </h4> <p>${facts[i].rating}</p></section>`;
+      resultsContainer.innerHTML += `<section class="results"><h4>Number of tags: </h4> <p>${facts[i].tags.length}</p></section>`;
       if (i === 7) {
         break;
       }

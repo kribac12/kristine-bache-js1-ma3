@@ -17,3 +17,8 @@
     transform: rotate(360deg);
   }
 }
+
+h3 {
+  color: #fc542f;
+  text-transform: uppercase;
+}
